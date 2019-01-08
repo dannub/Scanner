@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.user.elevate.fragment.Scan2"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/parentlayout2"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimaryDark">
+                    <TextView
+                        android:layout_marginTop="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hadir ="
+                        android:id="@+id/hadiry"
+                        android:layout_marginBottom="12sp"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="10pt"
+                        android:textColor="@color/colorPrimary"/>
+                    <TextView
+                        android:layout_marginTop="12sp"
+                        android:layout_marginBottom="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/hadir2"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="5sp"
+                        android:textColor="@color/colorPrimary"/>
+                    <TextView
+                        android:layout_marginTop="12sp"
+                        android:layout_marginBottom="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Belum ="
+                        android:id="@+id/belumy"
+                        android:textSize="25sp"
+                        android:gravity="right"
+                        android:layout_marginLeft="20pt"
+                        android:textColor="@color/colorPrimary"/>
+                    <TextView
+                        android:layout_marginBottom="12sp"
+                        android:layout_marginTop="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/belumhadir2"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="5sp"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+                <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:id="@+id/parentLayout2"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/AppTheme.AppBarOverlay">
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <ListView  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:id="@+id/listView2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:src="@drawable/update" />
+
+                </android.support.design.widget.CoordinatorLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width = "match_parent"
+            android:layout_gravity = "bottom"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="0.2"
+            android:orientation = "vertical">
+            <TextView
+                android:id="@+id/scanR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SCAN"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"/>
+
+            <ImageView
+
+                android:src="@mipmap/fokus3"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:id="@+id/scan22"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+
